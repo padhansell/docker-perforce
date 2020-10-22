@@ -2,7 +2,7 @@ FROM noonien/perforce-base
 LABEL maintainer="George Jiglau <george@mux.ro>"
 
 # Install the perforce server
-RUN apt-get update && apt-get install -y helix-p4d=2018.2-1751184~bionic curl && \
+RUN apt-get update && apt-get install -y helix-p4d curl && \
     # clean temporary files
     rm -rf /var/log/* && \
     rm -rf /var/lib/apt/lists/*
